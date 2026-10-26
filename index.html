@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Reusable UI design system showcase for a student club event platform.">
+  <title>Club UI Design System</title>
+  <link rel="stylesheet" href="tokens.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="Club UI home"><span class="brand-mark">C</span><span>Club UI <small>Design System</small></span></a>
+    <nav aria-label="Main navigation"><a href="#foundations">Foundations</a><a href="#components">Components</a><a href="#event">Example app</a></nav>
+    <button class="button button-secondary button-small" id="themeToggle" type="button" aria-pressed="false">Switch theme</button>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <p class="eyebrow">A shared language for better student experiences</p>
+      <h1>One system.<br><span>Consistent experiences.</span></h1>
+      <p class="hero-copy">A starter design system for student clubs to create accessible, consistent event pages and digital products faster.</p>
+      <div class="hero-actions"><a class="button button-primary" href="#components">Explore components <span aria-hidden="true">→</span></a><a class="button button-secondary" href="#event">View example app</a></div>
+      <div class="stats"><div><strong>01</strong><span>Shared foundation</span></div><div><strong>Reusable</strong><span>UI components</span></div><div><strong>Accessible</strong><span>Design intent</span></div></div>
+    </section>
+
+    <section class="section" id="foundations">
+      <div class="section-heading"><div><p class="eyebrow">01 / Foundations</p><h2>Designed with purpose</h2></div><p>Tokens create a dependable base for every component and screen.</p></div>
+      <div class="foundation-grid">
+        <article class="panel"><h3>Colour palette</h3><p class="muted">Brand, surface, and status colours</p><div class="swatches"><div><i style="background:#4F46E5"></i><span>Primary</span><code>#4F46E5</code></div><div><i style="background:#0F766E"></i><span>Secondary</span><code>#0F766E</code></div><div><i style="background:#171923"></i><span>Ink</span><code>#171923</code></div><div><i style="background:#DCE1EA"></i><span>Border</span><code>#DCE1EA</code></div><div><i style="background:#15803D"></i><span>Success</span><code>#15803D</code></div><div><i style="background:#B91C1C"></i><span>Error</span><code>#B91C1C</code></div></div></article>
+        <article class="panel"><h3>Type scale</h3><p class="muted">Clear hierarchy, readable rhythm</p><div class="type-sample"><div class="type-display">Aa <small>Display / 40</small></div><div class="type-h2">Aa <small>Heading / 24</small></div><div class="type-body">Aa <small>Body / 16</small></div><div class="type-small">Aa <small>Caption / 12</small></div></div></article>
+        <article class="panel"><h3>Spacing & shape</h3><p class="muted">An 8 px base grid with consistent corners</p><div class="spacing-demo"><span style="width:8px"></span><span style="width:16px"></span><span style="width:24px"></span><span style="width:32px"></span><span style="width:48px"></span></div><div class="spacing-labels"><span>8</span><span>16</span><span>24</span><span>32</span><span>48 px</span></div><div class="shape-row"><div class="shape shape-sm">8</div><div class="shape shape-md">12</div><div class="shape shape-lg">18</div></div></article>
+      </div>
+    </section>
+
+    <section class="section" id="components">
+      <div class="section-heading"><div><p class="eyebrow">02 / Components</p><h2>Small pieces, one system</h2></div><p>Reusable elements help keep interactions familiar across projects.</p></div>
+      <div class="component-grid">
+        <article class="panel"><h3>Buttons</h3><p class="muted">Use clear labels for actions.</p><div class="demo-row"><button class="button button-primary" type="button">Primary action</button><button class="button button-secondary" type="button">Secondary</button></div><div class="demo-row"><button class="button button-primary" disabled>Disabled</button><button class="button button-quiet" type="button">Tertiary action</button></div></article>
+        <article class="panel"><h3>Badges & alerts</h3><p class="muted">Pair colour with a readable label.</p><div class="demo-row"><span class="badge badge-success">● Published</span><span class="badge badge-warning">● Draft</span><span class="badge badge-error">● Needs review</span></div><div class="alert"><strong>Design tip</strong><span>Keep feedback close to the action that caused it.</span></div></article>
+        <article class="panel"><h3>Form controls</h3><p class="muted">Labels and help text make forms easier to use.</p><label class="field-label" for="demoEmail">Email address</label><input id="demoEmail" class="field" type="email" placeholder="you@example.com"><p class="field-help">We'll use this for event updates.</p><label class="check-row"><input type="checkbox" id="demoCheck"> I agree to receive event updates</label></article>
+        <article class="panel"><h3>Card pattern</h3><p class="muted">A consistent container for related content.</p><div class="mini-card"><div class="event-art"><span>DESIGN</span><span aria-hidden="true">✳</span></div><div class="mini-card-content"><span class="badge badge-neutral">Workshop</span><h4>Design for everyone</h4><p>Learn practical ways to make digital products more inclusive.</p><div class="card-bottom"><span>↗ 24 Nov · 2:00 PM</span><button class="text-button" type="button" id="detailsButton">Details →</button></div><p class="sr-only" id="detailsMessage" aria-live="polite"></p></div></div></article>
+      </div>
+    </section>
+
+    <section class="section event-section" id="event">
+      <div class="section-heading"><div><p class="eyebrow">03 / Applied example</p><h2>Club event registration</h2></div><p>A sample flow showing the design system working as one experience.</p></div>
+      <div class="event-layout">
+        <div class="event-intro"><span class="event-icon">✳</span><p class="eyebrow">Student design club · Workshop</p><h3>Design for everyone</h3><p>Join a hands-on session on building clear, accessible digital experiences. Bring your curiosity; no prior UI/UX experience is required.</p><ul><li>Monday, 24 November</li><li>2:00 PM – 4:00 PM</li><li>Design Lab, Campus</li></ul><div class="event-note"><strong>What you'll learn</strong><p>Design tokens, reusable components, and quick accessibility checks.</p></div></div>
+        <form class="registration panel" id="registrationForm" novalidate>
+          <h3>Reserve your seat</h3><p class="muted">Fields marked * are required.</p>
+          <label class="field-label" for="fullName">Full name *</label><input class="field" id="fullName" name="fullName" autocomplete="name" required minlength="2" placeholder="Your name"><p class="error-text" id="nameError"></p>
+          <label class="field-label" for="email">College email *</label><input class="field" id="email" name="email" type="email" autocomplete="email" required placeholder="you@college.edu"><p class="error-text" id="emailError"></p>
+          <label class="field-label" for="year">Year of study *</label><select class="field" id="year" name="year" required><option value="">Select your year</option><option>First year</option><option>Second year</option><option>Third year</option><option>Final year</option></select>
+          <label class="check-row"><input type="checkbox" id="consent" required> I agree to receive event-related updates. *</label>
+          <button class="button button-primary full-width" type="submit">Register for workshop <span aria-hidden="true">→</span></button>
+          <div class="form-message" id="formMessage" role="status" aria-live="polite"></div>
+          <p class="field-help">Demo only: this form does not send or store your information.</p>
+        </form>
+      </div>
+    </section>
+
+    <section class="section documentation">
+      <div><p class="eyebrow">04 / Contribution guide</p><h2>Make good design easier to share.</h2><p class="hero-copy">Use existing components first. If a new pattern is needed, document the problem, propose a variant, and ask for a design review before adding it to the shared library.</p></div>
+      <div class="steps"><div><b>01</b><span><strong>Reuse</strong><small>Start with an existing component.</small></span></div><div><b>02</b><span><strong>Propose</strong><small>Explain the user need and show an example.</small></span></div><div><b>03</b><span><strong>Review</strong><small>Check accessibility, states, and naming.</small></span></div><div><b>04</b><span><strong>Document</strong><small>Update the changelog and usage guidance.</small></span></div></div>
+    </section>
+  </main>
+  <footer><a class="brand" href="#"><span class="brand-mark">C</span><span>Club UI <small>Design System starter</small></span></a><p>Built as a student portfolio project · Customize before publishing</p></footer>
+  <script src="app.js"></script>
+</body>
+</html>
